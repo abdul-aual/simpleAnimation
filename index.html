@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stage
+        {
+            height: 200px;
+            width: 80%;
+            background-color: aqua;
+            
+            
+            
+        }
+        
+        @keyframes anim {
+
+            0%
+            {
+                background-color: yellow;
+                top:0;
+                left: 0;
+            }
+            25%
+            {
+                background-color: yellowgreen;
+                top: 75px;
+                left:200px;
+
+            }
+            50%
+            {
+                background-color: red;
+                top: 100px;
+                left: 400px;
+            }
+            75%
+            {
+                background-color: yellowgreen;
+                top:75px;
+                left: 600px;
+
+            }
+            100%
+            {
+                background-color: yellow;
+                top:0;
+                left: 800px;
+
+            }
+            
+        }
+        .ball
+        {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color:yellow;
+            position:absolute;
+            
+            
+        }
+
+        .stage:hover .ball{
+            animation: anim 10s ease-in-out  infinite ;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
